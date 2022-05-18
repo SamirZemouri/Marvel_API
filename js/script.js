@@ -76,27 +76,20 @@ function block_text(date_, title_, descri_, img_){
     block.style.width = "50vh";
     img.style.width = "50vh";
 
-    block_style(block);
-
-}
-
-function block_style(block){
-
-    const block1 = document.querySelector('.block1');
-    const block2 = document.querySelector('.block2');
-    const block3 = document.querySelector('.block3');
-    const block4 = document.querySelector('.block4');
-    const block5 = document.querySelector('.block5');
-
-    if (block.childNodes.length === 5) {
-        for (let index = 5; index < block.childNodes.length; index++) {
-            block1.appendChild(block.childNodes[0]);
-            block2.appendChild(block.childNodes[1]);
-            block3.appendChild(block.childNodes[2]);
-            block4.appendChild(block.childNodes[3]);
-            block5.appendChild(block.childNodes[4]);
-        }
-    }
+    /* switch background */
+    /* const title_website = document.querySelector('.title');
+    let nbr = 0;
+    switch (nbr) {
+        case 0:
+            title_website.style.background = "url('./img/back_title3.png')";
+            break;
+        case 1:
+            title_website.style.background = "url('./img/back_title2.png')";
+            break;
+        default:
+            title_website.style.background = "url('./img/back_title1.png')";
+            break;
+    } */
 
 }
 
