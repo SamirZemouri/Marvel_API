@@ -31,7 +31,6 @@ fetch('https://gateway.marvel.com:443/v1/public/series?ts=1&apikey=3874cf496cac8
             let descri_ = res.description;
             block_text(date_, title_, descri_, img_);
         }
-
     }
 });
 
@@ -40,6 +39,7 @@ const block = document.querySelector('.block');
 function block_text(date_, title_, descri_, img_){
     
     /* création des éléments */
+    let block_series = document.createElement('div');
     let title = document.createElement('h2');
     let img = document.createElement('img');
     let descri = document.createElement('p');
@@ -57,16 +57,39 @@ function block_text(date_, title_, descri_, img_){
     img.src = img_;
 
     /* mettre les éléments dans un block principale */
-    block.appendChild(title);
-    block.appendChild(img);
-    block.appendChild(descri);
-    block.appendChild(date);
+    block_series.appendChild(title);
+    block_series.appendChild(img);
+    block_series.appendChild(descri);
+    block_series.appendChild(date);
 
     /* création des class pour les éléments */
     title.classList.add('title');
     img.classList.add('img');
     descri.classList.add('description');
     date.classList.add('date');
+    block_series.classList.add('block-series');
+
+    block_style(block);
+
+}
+
+function block_style(block){
+
+    const block1 = document.querySelector('.block1');
+    const block2 = document.querySelector('.block2');
+    const block3 = document.querySelector('.block3');
+    const block4 = document.querySelector('.block4');
+    const block5 = document.querySelector('.block5');
+
+    if (block.childNodes.length === 5) {
+        for (let index = 5; index < block.childNodes.length; index++) {
+            block1.appendChild(block.childNodes[0]);
+            block2.appendChild(block.childNodes[1]);
+            block3.appendChild(block.childNodes[2]);
+            block4.appendChild(block.childNodes[3]);
+            block5.appendChild(block.childNodes[4]);
+        }
+    }
 
 }
 
