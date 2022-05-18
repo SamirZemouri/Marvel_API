@@ -34,9 +34,10 @@ fetch('https://gateway.marvel.com:443/v1/public/series?ts=1&apikey=3874cf496cac8
     }
 });
 
-const block = document.querySelector('.block');
 /* fonction de création du block */
 function block_text(date_, title_, descri_, img_){
+
+    const block = document.querySelector('.block');
     
     /* création des éléments */
     let block_series = document.createElement('div');
@@ -61,6 +62,7 @@ function block_text(date_, title_, descri_, img_){
     block_series.appendChild(img);
     block_series.appendChild(descri);
     block_series.appendChild(date);
+    block.appendChild(block_series);
 
     /* création des class pour les éléments */
     title.classList.add('title');
@@ -68,6 +70,11 @@ function block_text(date_, title_, descri_, img_){
     descri.classList.add('description');
     date.classList.add('date');
     block_series.classList.add('block-series');
+
+    /* resize des éléments */
+    block_series.style.width = "50vh";
+    block.style.width = "50vh";
+    img.style.width = "50vh";
 
     block_style(block);
 
