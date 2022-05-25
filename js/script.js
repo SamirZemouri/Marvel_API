@@ -304,25 +304,48 @@ function rand(min, max) {
         }
     }
 }
+
+// tableau pour la version desktop
 let tab_img = [];
 let tab_descri = [];
 let tab_date = [];
 let tab_title = [];
+
+// Tableau pour la version mobile
+
+let tab_img1 = [];
+let tab_descri1 = [];
+let tab_date1 = [];
+let tab_title1 = [];
 /* fonction de création du block */
 function block_text(date_, title_, descri_, img_){
 
     const img = document.querySelectorAll('.img');
+    const img1 = document.querySelectorAll('.img1');
     const descri = document.querySelectorAll('.description');
+    const descri1 = document.querySelectorAll('.description1')
     const release = document.querySelectorAll('.release');
+    const release1 = document.querySelectorAll('.release1');
     const title = document.querySelectorAll('.title');
+    const title1 = document.querySelectorAll('.title1');
 
     console.log(descri);
 
+    // push version desktop
     tab_img.push(img_);
     tab_date.push(date_);
     tab_title.push(title_);
     tab_descri.push(descri_);
 
+    // push version mobile
+    tab_img1.push(img_);
+    tab_date1.push(date_);
+    tab_title1.push(title_);
+    tab_descri1.push(descri_);
+
+
+
+// condition version desktop
     if (tab_img.length === 4) {
         img[0].style.backgroundImage = "url('"+tab_img[0]+"')";
         img[1].style.backgroundImage = "url('"+tab_img[1]+"')";
@@ -338,18 +361,50 @@ function block_text(date_, title_, descri_, img_){
         tab_descri = [];
     }
     if (tab_date.length === 4) {
-        release[0].firstChild.nodeValue = "Date de sortie : " + tab_date[0];
-        release[1].firstChild.nodeValue = "Date de sortie : " + tab_date[1];
-        release[2].firstChild.nodeValue = "Date de sortie : " + tab_date[2];
-        release[3].firstChild.nodeValue = "Date de sortie : " + tab_date[3];
+        release[0].firstChild.nodeValue = "Date de parution : " + tab_date[0];
+        release[1].firstChild.nodeValue = "Date de parution : " + tab_date[1];
+        release[2].firstChild.nodeValue = "Date de parution : " + tab_date[2];
+        release[3].firstChild.nodeValue = "Date de parution : " + tab_date[3];
         tab_date = [];
     }
     if (tab_title.length === 4) {
-        title[0].nodeValue = tab_title[0];
-        title[1].nodeValue = tab_title[1];
-        title[2].nodeValue = tab_title[2];
-        title[3].nodeValue = tab_title[3];
+        title[0].firstChild.nodeValue = tab_title[0];
+        title[1].firstChild.nodeValue = tab_title[1];
+        title[2].firstChild.nodeValue = tab_title[2];
+        title[3].firstChild.nodeValue = tab_title[3];
         tab_title = [];
     }
+
+    // condition version mobile
+
+    if (tab_img1.length === 4) {
+        img1[0].style.backgroundImage = "url('"+tab_img1[0]+"')";
+        img1[1].style.backgroundImage = "url('"+tab_img1[1]+"')";
+        img1[2].style.backgroundImage = "url('"+tab_img1[2]+"')";
+        img1[3].style.backgroundImage = "url('"+tab_img1[3]+"')";
+        tab_img1 = [];
+    }
+    if (tab_descri1.length === 4) {
+        descri1[0].firstChild.nodeValue = tab_descri1[0];
+        descri1[1].firstChild.nodeValue = tab_descri1[1];
+        descri1[2].firstChild.nodeValue = tab_descri1[2];
+        descri1[3].firstChild.nodeValue = tab_descri1[3];
+        tab_descri1 = [];
+    }
+    if (tab_date1.length === 4) {
+        release1[0].firstChild.nodeValue = "Date de parution : " + tab_date1[0];
+        release1[1].firstChild.nodeValue = "Date de parution : " + tab_date1[1];
+        release1[2].firstChild.nodeValue = "Date de parution : " + tab_date1[2];
+        release1[3].firstChild.nodeValue = "Date de parution : " + tab_date1[3];
+        tab_date1 = [];
+    }
+    if (tab_title1.length === 4) {
+        title1[0].firstChild.nodeValue = tab_title1[0];
+        title1[1].firstChild.nodeValue = tab_title1[1];
+        title1[2].firstChild.nodeValue = tab_title1[2];
+        title1[3].firstChild.nodeValue = tab_title1[3];
+        tab_title1 = [];
+    }
+
 
 }

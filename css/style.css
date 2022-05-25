@@ -5,7 +5,7 @@
 
 h1{
   font-family: "ComicsBook";
-  color: yellow;
+  color: rgb(216, 216, 216);
 }
 
 h2{
@@ -19,27 +19,18 @@ body {
 }
 
 .blur {
-  height: 100%;
+  width: 100%;
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.home {
-  background-image: url(../assets/images/bubble/Home.jpg);
-  width: 10%;
-  height: 100%;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .navbar {
     background-image: url(../assets/images/sfxbanner.webp);
     height: 150px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     background-position-y: -505px;
   }
 
@@ -72,17 +63,17 @@ body {
   
   .hero-item {
     /* background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/53819/divinity-ori-sin.jpg'); */
-    background-image: url(../assets/images/1.jpg);
+    background-image: url(../assets/images/4824751.jpg);
   }
   
   .standard-item:nth-child(2) {
     /* background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/53819/re7-chris-large.jpg"); */
-    background-image: url(../assets/images/2.jpg);
+    background-image: url(../assets/images/4819765.jpg);
   }
   
   .standard-item:nth-child(3) {
     /* background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/53819/bioshock-large.jpg"); */
-    background-image: url(../assets/images/3.jpg);
+    background-image: url(../assets/images/4833725.jpg);
   }
   
   .standard-item:nth-child(4) {
@@ -94,7 +85,7 @@ body {
 
   .standard-item:nth-child(5) {
     /* background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/53819/dishonored-large.jpg"); */
-    background-image: url(../assets/images/4.png);
+    background-image: url(../assets/images/4932198.jpg);
   }
   
   @supports (display: grid) {
@@ -169,12 +160,10 @@ body {
     }
   
     .standard-item:nth-child(4) {
-      width: 70%;
+      width: 245px;
       margin-top: -110px;
-      top: -60px;
-      left: 25px;
       grid-column: 1 / span 2;
-      grid-row: 40 / 10;
+      grid-row: 32 / 10;
       margin-top: -79px;
       grid-column-start: 4;
       display: flex;
@@ -197,12 +186,42 @@ body {
   .title{
     font-size: 2rem;
     padding-bottom: 40px;
-    width: 70%;
     text-align: center;
   }
   
   .description {
     width: 70%;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     padding-bottom: 25px;
+  }
+
+  button {
+    font-family: "ComicsBook";
+    background-image: url(../assets/images/sfxbanner.webp);
+    border: solid 2px black;
+    outline: 0;
+    padding: 1rem 4rem;
+    font-size: 1.5rem;
+    letter-spacing: .08rem;
+    border-radius: .35rem;
+    color: white;
+  }
+
+  button:active{
+    color: blue;
+    background-image:   linear-gradient(
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.5)), url(../assets/images/sfxbanner.webp);
+
+  }
+
+  .btn{
+    margin-top: 30px;
+    width: 100%;
+    align-self: center;
+    cursor: inherit;
+  }
+
+  .comicss{
+    color: red;
   }

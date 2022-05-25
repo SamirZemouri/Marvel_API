@@ -1,0 +1,137 @@
+@media only screen and (min-width:280px) {
+  .wrapper {
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width:1000px) {
+  .wrapper {
+    display: grid;
+  }
+
+  .wrapper1 {
+    display: none !important;
+  }
+
+  .introduction {
+    width: 900px !important;
+    margin-bottom: 100px;
+    background-image: url(../assets/images/199.jpg)!important;
+  }
+
+  button:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1),
+        rgba(0, 0, 0, 0.5)), url(../assets/images/sfxbanner.webp);
+  }
+
+  button:active {
+    color: blue;
+    background-image: url(../assets/images/sfxbanner.webp);
+
+  }
+
+  .title {
+    font-size: 1.2rem;
+    padding-bottom: 40px;
+    text-align: center;
+    color: yellow;
+    max-width: 200px;
+  }
+
+  .bubble2 {
+    background-image: url(../assets/images/bubble/bubble_title3.png);
+    background-size: contain;
+    grid-column: 1 / span 2;
+    grid-row: 70 / 36;
+    grid-column-start: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+  }
+
+  .bubble3 {
+    background-image: url(../assets/images/bubble/bubble_title4.png);
+    background-size: cover;
+    grid-column: 1 / span 2;
+    grid-row: 90 / 36;
+    grid-column-start: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 295px;
+  }
+
+  .bubble4 {
+    background-image: url(../assets/images/bubble/bubble_title5.png);
+    width: 295px;
+    margin-top: -110px;
+    grid-column: 1 / span 2;
+    grid-row: 97 / 119;
+    margin-top: -79px;
+    grid-column-start: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .release {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width:1300px) {
+  .bubble2 {
+    width: 320px !important;
+  }
+
+  .bubble3 {
+    width: 353px !important;
+  }
+
+}
+
+@media only screen and (min-width:1600px) {
+  .bubble2 {
+    width: 470px !important;
+  }
+
+  .bubble3 {
+    width: 410px !important;
+  }
+
+  .bubble4 {
+    width: 350px !important;
+  }
+
+}
+
+@media only screen and (min-width:1600px) {
+  .bubble4 {
+    width: 385px!important;
+    right: -60px;
+  }
+
+}
+
+@media only screen and (min-width:2500px) {
+  .bubbletop {
+    width: 425px !important;
+    grid-row: 32 / 6 !important;
+  }
+
+  .bubble2 {
+    width: 820px !important;
+  }
+
+  .bubble3 {
+    width: 410px !important;
+  }
+
+  .bubble4 {
+    width: 430px !important;
+    right: -190px;
+  }
+
+}

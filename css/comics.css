@@ -1,0 +1,67 @@
+.wrapper1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titre {
+    margin-top: 90px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.imgbackground {
+    background-image: url(../assets/images/4824751.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 250px;
+    height: 250px;
+}
+
+.descri {
+    width: 90%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.release1 {
+    margin-top: 20px;
+    color: red;
+}
+
+.bdtitre {
+    width: 90%;
+    background-image: url(../assets/images/sfxbanner.webp);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 10px solid rgb(0, 0, 0);
+    margin-bottom: 20px;
+}
+
+.describd {
+    width: 90%;
+    background-image: url(../assets/images/sfxbanner.webp);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 10px solid rgb(0, 0, 0);
+}
